@@ -533,7 +533,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 </script>
 <script type='text/javascript' id='ddp-admin-js-extra'>
 /* <![CDATA[ */
-var ddp_wl_options_for_js = {"ddp_wl_pn_for_js":"Divi Den Pro","ddp_wl_i_for_js":"https:\/\/patsseafood.com\/wp-content\/plugins\/ddpro\/\/include\/ddp-icon.png","ddp_ajax_url":"https:\/\/patsseafood.com\/wp-admin\/admin-ajax.php","ddp_plugin_setting_tab_position":"on","ddp_status":"enabled","ddp_on_hold_status":"","ddp_nonce":"dec00558d9"};
+var ddp_wl_options_for_js = {"ddp_wl_pn_for_js":"Divi Den Pro","ddp_wl_i_for_js":"https:\/\/patsseafood.com\/wp-content\/plugins\/ddpro\/\/include\/ddp-icon.png","ddp_ajax_url":"https:\/\/patsseafood.com\/wp-admin\/admin-ajax.php","ddp_plugin_setting_tab_position":"on","ddp_status":"enabled","ddp_on_hold_status":"","ddp_nonce":"475898c634"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://patsseafood.com/wp-content/plugins/ddpro/js/ddp-admin.js?ver=5.0.4' id='ddp-admin-js'></script>
@@ -542,7 +542,7 @@ var ddp_wl_options_for_js = {"ddp_wl_pn_for_js":"Divi Den Pro","ddp_wl_i_for_js"
 /* <![CDATA[ */
 var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
 var et_shortcodes_strings = {"previous":"Previous","next":"Next"};
-var et_pb_custom = {"ajaxurl":"https:\/\/patsseafood.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/patsseafood.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/patsseafood.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"81fe6c45d9","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"8357a364c7","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"30","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":""}; var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"}; var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/patsseafood.com\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/patsseafood.com\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/patsseafood.com\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"e85cfb3903","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"3c3f290e40","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"30","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":""}; var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"}; var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
 var et_pb_box_shadow_elements = [];
 var et_pb_motion_elements = {"desktop":[],"tablet":[],"phone":[]};
 var et_pb_sticky_elements = [];
@@ -552,7 +552,7 @@ var et_pb_sticky_elements = [];
 <script type='text/javascript' src='https://patsseafood.com/wp-content/plugins/dg-divi-carousel/scripts/frontend-bundle.min.js?ver=2.0.18' id='divi-carousel-frontend-bundle-js'></script>
 <script type='text/javascript' id='divi-plus-frontend-bundle-js-extra'>
 /* <![CDATA[ */
-var DiviPlusFrontendData = {"ajaxurl":"https:\/\/patsseafood.com\/wp-admin\/admin-ajax.php","ajaxnonce":"0dbc22ec3a"};
+var DiviPlusFrontendData = {"ajaxurl":"https:\/\/patsseafood.com\/wp-admin\/admin-ajax.php","ajaxnonce":"55f2d862f7"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://patsseafood.com/wp-content/plugins/divi-plus/scripts/frontend-bundle.min.js?ver=1.6.0' id='divi-plus-frontend-bundle-js'></script>
