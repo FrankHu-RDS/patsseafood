@@ -1,0 +1,57 @@
+#footer-widgets .footer-widget a, #footer-widgets .footer-widget li a, #footer-widgets .footer-widget li a:hover {color: #fff;}
+.footer-widget {color: #fff;}
+.et_slide_in_menu_container, .et_slide_in_menu_container .et-search-field {letter-spacing: px;}
+.et_slide_in_menu_container .et-search-field::-moz-placeholder {letter-spacing: px;}
+.et_slide_in_menu_container .et-search-field::-webkit-input-placeholder {letter-spacing: px;}
+.et_slide_in_menu_container .et-search-field:-ms-input-placeholder {letter-spacing: px;}
+@media only screen and (min-width:1350px) {.et_pb_row {padding: 27px 0;}
+	.et_pb_section {padding: 54px 0;}
+	.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper {padding-top: 81px;}
+	.et_pb_fullwidth_section {padding: 0;}}
+.bup-filter-header#up-filter-header {padding-left: 40px;padding-right: 20px;}
+div.et_pb_section.et_pb_section_0 {background-image: url("https://patsseafood.com/wp-content/uploads/2022/02/pats_seafood_main_shop.jpg") !important;}
+.et_pb_section_0 {height: 650px;}
+.et_pb_image_0 {text-align: center;}
+.et_pb_text_0 {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;font-size: 32px;}
+.et_pb_text_1 {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;}
+body #page-container .et_pb_section .et_pb_button_0 {color: #fff !important;background-color: #23395d;}
+.et_pb_button_0, .et_pb_button_0:after {transition: all 300ms ease 0ms;}
+.dipl_image_card_carousel_0 .dipl_image_card_title {font-size: 16px;line-height: 1.2em;}
+.dipl_image_card_carousel_0 .dipl_image_card_content {font-size: 14px;line-height: 1.5em;}
+.dipl_image_card_carousel_0 .swiper-container-3d .swiper-slide-shadow-left, .dipl_image_card_carousel_0 .swiper-container-3d .swiper-slide-shadow-right {background-image: none;}
+.et_pb_text_2 {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;font-size: 28px;}
+.et_pb_text_4 {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;font-size: 28px;}
+.et_pb_text_3 {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;font-size: 16px;}
+.et_pb_text_5 {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;font-size: 16px;}
+.dipl_image_card_carousel_item_0 .dipl_image_card_title {font-size: 16px;letter-spacing: 0px;line-height: 1.2em;}
+.dipl_image_card_carousel_item_1 .dipl_image_card_title {font-size: 16px;letter-spacing: 0px;line-height: 1.2em;}
+.dipl_image_card_carousel_item_2 .dipl_image_card_title {font-size: 16px;letter-spacing: 0px;line-height: 1.2em;}
+.dipl_image_card_carousel_item_3 .dipl_image_card_title {font-size: 16px;letter-spacing: 0px;line-height: 1.2em;}
+.dipl_image_card_carousel_item_0 .dipl_image_card_content {font-size: 14px;letter-spacing: 0px;line-height: 1.5em;}
+.dipl_image_card_carousel_item_3 .dipl_image_card_content {font-size: 14px;letter-spacing: 0px;line-height: 1.5em;}
+.dipl_image_card_carousel_item_2 .dipl_image_card_content {font-size: 14px;letter-spacing: 0px;line-height: 1.5em;}
+.dipl_image_card_carousel_item_1 .dipl_image_card_content {font-size: 14px;letter-spacing: 0px;line-height: 1.5em;}
+.dipl_image_card_carousel_item_3 .dipl_image_card_content_wrapper {padding-top: 20px !important;padding-right: 20px !important;padding-bottom: 20px !important;padding-left: 20px !important;}
+.dipl_image_card_carousel_item_1 .dipl_image_card_content_wrapper {padding-top: 20px !important;padding-right: 20px !important;padding-bottom: 20px !important;padding-left: 20px !important;}
+.dipl_image_card_carousel_item_2 .dipl_image_card_content_wrapper {padding-top: 20px !important;padding-right: 20px !important;padding-bottom: 20px !important;padding-left: 20px !important;}
+.dipl_image_card_carousel_item_0 .dipl_image_card_content_wrapper {padding-top: 20px !important;padding-right: 20px !important;padding-bottom: 20px !important;padding-left: 20px !important;}
+.dipl_price_list .dipl_price_list_item_12 .dipl_price_list_item_name {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;}
+.dipl_price_list .dipl_price_list_item_11 .dipl_price_list_item_name {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;}
+.dipl_price_list .dipl_price_list_item_9 .dipl_price_list_item_name {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;}
+.dipl_price_list .dipl_price_list_item_8 .dipl_price_list_item_name {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;}
+.dipl_price_list .dipl_price_list_item_7 .dipl_price_list_item_name {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;}
+.dipl_price_list .dipl_price_list_item_5 .dipl_price_list_item_name {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;}
+.dipl_price_list .dipl_price_list_item_6 .dipl_price_list_item_name {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;}
+.dipl_price_list .dipl_price_list_item_4 .dipl_price_list_item_name {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;}
+.dipl_price_list .dipl_price_list_item_3 .dipl_price_list_item_name {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;}
+.dipl_price_list .dipl_price_list_item_2 .dipl_price_list_item_name {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;}
+.dipl_price_list .dipl_price_list_item_1 .dipl_price_list_item_name {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;}
+.dipl_price_list .dipl_price_list_item_0 .dipl_price_list_item_name {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;}
+.dipl_price_list .dipl_price_list_item_13 .dipl_price_list_item_name {font-family: "Alata",Helvetica,Arial,Lucida,sans-serif;}
+@media only screen and (min-width:981px) {.et_pb_image_0 {width: 300px;}}
+@media only screen and (max-width:980px) {.et_pb_image_0 {margin-left: auto;margin-right: auto;}
+	body #page-container .et_pb_section .et_pb_button_0:after {display: inline-block;opacity: 0;}
+	body #page-container .et_pb_section .et_pb_button_0:hover:after {opacity: 1;}}
+@media only screen and (max-width:767px) {.et_pb_image_0 {margin-left: auto;margin-right: auto;}
+	body #page-container .et_pb_section .et_pb_button_0:after {display: inline-block;opacity: 0;}
+	body #page-container .et_pb_section .et_pb_button_0:hover:after {opacity: 1;}}
