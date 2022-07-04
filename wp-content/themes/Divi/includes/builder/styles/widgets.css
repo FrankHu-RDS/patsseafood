@@ -8,3 +8,6 @@
 #et_pb_widget_area_create {background-color: #fff;max-width: 96%;margin-right: 0;margin-top: 10px;border-radius: 0;border: 1px solid #ddd;box-shadow: 0 1px 2px rgba(0,0,0,.05);margin-left: 0;padding: 4%;}
 #et_pb_widget_area_create p label {font-size: 1.3em;display: inline-block;width: 85%;font-weight: 600;color: #222;font-family: Open Sans,sans-serif;}
 .et_pb_widget_area_remove {margin-top: 11px;}
+.edit-widgets-block-editor .et_pb_widget_area_remove {margin: 12px 0 12px 12px;position: absolute;z-index: 1;}
+.edit-widgets-block-editor .et_pb_widget_area_remove+button.components-panel__body-toggle.components-button {padding-left: 80px;}
+.edit-widgets-block-editor #et_pb_widget_area_create {margin: 0 auto 30px;max-width: 700px;padding: 2%;}

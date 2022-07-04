@@ -1,10 +1,17 @@
+body.et-pb-preview #main-content .container table {border: 1px solid #eee;margin: 0 0 15px;text-align: left;width: 100%;}
+body.et-pb-preview #main-content .container thead th, body.et-pb-preview #main-content .container tr th {color: #555;font-weight: 700;padding: 9px 24px;}
+body.et-pb-preview #main-content .container tr td {border-top: 1px solid #eee;padding: 6px 24px;}
+body.et-pb-preview #main-content .container ul {list-style-type: disc;padding: 0 0 23px 1em;line-height: 26px;}
+body.et-pb-preview #main-content .container ol {list-style-type: decimal;list-style-position: inside;padding: 0 0 23px;line-height: 26px;}
+body.et-pb-preview #main-content .container ul li ol {padding: 2px 0 2px 20px;}
+body.et-pb-preview #main-content .container ol li ol {padding: 2px 0 2px 35px;}
 body.et-pb-preview #page-container {padding-top: 0 !important;box-shadow: none !important;width: 100% !important;}
 body.et-pb-preview.et-db #page-container {padding: 0 !important;margin: 0;border: none;background: none;}
 body.et-pb-preview #main-content .container {margin-top: 0 !important;margin-bottom: 0 !important;width: 100%;padding: 0 40px;padding-top: 0 !important;box-sizing: border-box;box-shadow: none;}
 body.et-pb-preview {background-color: #fff !important;background-image: none !important;border: none;}
 body.et-pb-preview.et-db {color: #666;}
 body.et-pb-preview:before {box-shadow: none;}
-body.et-pb-preview.et-db #main-content>.container>div, body.et-pb-preview.et-db #main-content>.container>div>div {margin: 0;padding: 0;background: none;box-shadow: none;border: none;width: 100%;min-width: 0;max-width: 100%;}
+body.et-pb-preview.et-db #main-content>.container>div:not(.et_pb_prompt_modal), body.et-pb-preview.et-db #main-content>.container>div>div:not(.et_pb_prompt_modal) {margin: 0;padding: 0;background: none;box-shadow: none;border: none;width: 100%;min-width: 0;max-width: 100%;}
 @media (max-width:479px) {body.et-pb-preview #main-content .container {padding: 0 20px;}}
 body.et-pb-preview #main-content .container:before {display: none;}
 .et-pb-preview-message {text-align: center;}

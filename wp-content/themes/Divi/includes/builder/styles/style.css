@@ -175,6 +175,8 @@ a.et-pb-clone.et-pb-advanced-setting-clone {left: 44px;font-size: 33px;top: 9px;
 .et_pb_modal_settings_container.et_pb_modal_settings_container_step2 {animation: et_pb_fade_in_small .5s 1 cubic-bezier(.77,0,.175,1);}
 .et_pb_modal_settings_container.et_pb_saved_global_modal {box-shadow: 0 0 100px rgba(0,172,187,.17);}
 .et_pb_modal_settings_container.et_pb_library_modal {width: calc(100vw - 70px);max-width: 1179px;height: calc(100vh - 122px);top: 76px;margin: 0;left: calc(( 100vw - 1179px ) / 2);}
+.et_pb_modal_settings_container.et_pb_library_modal #et-cloud-app .et-cloud-app-content-wrapper {top: 0;}
+.et_pb_modal_settings_container.et_pb_library_modal #et-cloud-app .et-cloud-app-layout {width: calc(100vw - 70px);max-width: 1179px;height: calc(100vh - 202px) !important;top: 174px;margin: 0;left: calc(( 100vw - 1179px ) / 2) !important;}
 .et_pb_library_modal .et-pb-all-modules-tab.active-container {padding: 0;overflow: hidden;}
 .et_pb_library_modal .et-pb-options-tabs-links {width: 1179px;top: -68px;}
 .et_pb_library_modal iframe {width: 1179px;height: 700px;}
@@ -206,6 +208,8 @@ a.et-pb-clone.et-pb-advanced-setting-clone {left: 44px;font-size: 33px;top: 9px;
 	to {margin-top: -5%;opacity: 0;}}
 @keyframes et_pb_slide_left {0% {opacity: 0;margin-left: -30px;}
 	to {opacity: 1;margin-left: 0;}}
+@keyframes et_pb_slide_out_left {0% {margin-left: 0;}
+	to {margin-left: -100%;}}
 @keyframes et_pb_slide_right {0% {opacity: 0;margin-left: 30px;}
 	to {opacity: 1;margin-left: 0;}}
 @keyframes et_pb_slide_left_short {0% {opacity: 0;margin-left: -15px;}

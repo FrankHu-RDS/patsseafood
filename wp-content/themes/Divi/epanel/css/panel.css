@@ -65,11 +65,11 @@ h1#epanel-title {font-weight: 600;font-size: 18px;color: #fff;background-color: 
 #epanel-content .et-panel-box__checkbox-list-label {display: block;margin-bottom: 5px;font-weight: bold;}
 #epanel-content .et-epanel-box .et-box-content input, #epanel-content .et-epanel-box .et-box-content .et-upload-buttons {vertical-align: top;float: left;}
 .rtl #epanel-content .et-epanel-box .et-box-content input, .rtl #epanel-content .et-epanel-box .et-box-content .et-upload-buttons {float: right;}
-.et-epanel-box select, .et-epanel-box input[type="text"], .et-epanel-box input[type="password"], .et-epanel-box textarea {margin-left: 0;border-radius: 3px;border: none;box-shadow: none;background: #f1f5f9;padding: 13px;font-size: 13px;color: #4c5866;height: auto;width: auto;width: 100%;font-family: "Open Sans",sans-serif;margin-bottom: 0;-webkit-transition: background .5s;-moz-transition: background .5s;transition: background .5s;font-weight: 600;}
+.et-epanel-box select, .et-epanel-box input[type="text"], .et-epanel-box input[type="password"], .et-epanel-box textarea {margin-left: 0;border-radius: 3px;border: none;box-shadow: none;background-color: #f1f5f9;padding: 13px;font-size: 13px;color: #4c5866;height: auto;width: auto;width: 100%;font-family: "Open Sans",sans-serif;margin-bottom: 0;-webkit-transition: background .5s;-moz-transition: background .5s;transition: background .5s;font-weight: 600;}
 .et-epanel-box select {padding: 5px 13px;}
 .et-epanel-box input[type="text"]:focus, .et-epanel-box input[type="password"]:focus, .et-epanel-box textarea:focus {background: #e6ecf2;}
 .et-epanel-box select, .et-epanel-box input[type="text"], .et-epanel-box input[type="password"] {height: 30px;}
-.et-epanel-box select {width: 55%;}
+.et-epanel-box select {width: 55%;line-height: 21px;}
 input.et-checkbox.yes_no_button {display: none;}
 #epanel .et_pb_yes_no_button {width: 100%;display: inline-block;position: relative;cursor: pointer;-moz-transition: all .3s;-webkit-transition: all .3s;transition: all .3s;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;font-size: 12px;}
 #epanel .et_pb_yes_no_button.et_pb_off_state {background-color: #f1f5f9;}
@@ -234,6 +234,7 @@ input.et-checkbox.yes_no_button {display: none;}
 .et-box-content .colorpalette-colorpicker.active {display: block;}
 .et-box-content .wp-picker-holder {margin-top: 50px;}
 .et-box-content input.input-colorpalette-colorpicker.wp-color-picker {display: block !important;width: 316px !important;}
+.et-box-content .iris-picker .iris-strip {margin-left: 9px !important;}
 .et-clearfix {clear: both;}
 #epanel-header .epanel-portability {right: 50px;}
 .rtl #epanel-header .epanel-portability {right: auto;left: 50px;}

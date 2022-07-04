@@ -10,21 +10,21 @@
 .et-fb-option--date-picker .ui-widget-icon-block {left: 50%;margin-left: -8px;display: block;}
 .et-fb-option--date-picker .ui-widget-overlay {position: fixed;top: 0;left: 0;width: 100%;height: 100%;}
 .et-fb-option--date-picker .ui-datepicker {width: 17em;padding: .2em .2em 0;display: none;}
-.et-fb-option--date-picker .ui-datepicker .ui-datepicker-header {position: relative;padding: .2em 0;}
-.et-fb-option--date-picker .ui-datepicker .ui-datepicker-next, .et-fb-option--date-picker .ui-datepicker .ui-datepicker-prev {position: absolute;top: 2px;width: 1.8em;height: 1.8em;}
-.et-fb-option--date-picker .ui-datepicker .ui-datepicker-next-hover, .et-fb-option--date-picker .ui-datepicker .ui-datepicker-prev-hover {top: 1px;}
-.et-fb-option--date-picker .ui-datepicker .ui-datepicker-prev {left: 2px;}
-.et-fb-option--date-picker .ui-datepicker .ui-datepicker-next {right: 2px;}
-.et-fb-option--date-picker .ui-datepicker .ui-datepicker-prev-hover {left: 1px;}
-.et-fb-option--date-picker .ui-datepicker .ui-datepicker-next-hover {right: 1px;}
+.et-fb-option--date-picker .ui-datepicker .ui-datepicker-header {position: relative;padding: .8em 0;}
+.et-fb-option--date-picker .ui-datepicker .ui-datepicker-next, .et-fb-option--date-picker .ui-datepicker .ui-datepicker-prev {position: absolute;top: 9px;width: 1.8em;height: 1.8em;cursor: pointer;}
+.et-fb-option--date-picker .ui-datepicker .ui-datepicker-next-hover, .et-fb-option--date-picker .ui-datepicker .ui-datepicker-prev-hover {top: 9px;}
+.et-fb-option--date-picker .ui-datepicker .ui-datepicker-prev {left: 9px;}
+.et-fb-option--date-picker .ui-datepicker .ui-datepicker-next {right: 9px;}
+.et-fb-option--date-picker .ui-datepicker .ui-datepicker-prev-hover {left: 9px;}
+.et-fb-option--date-picker .ui-datepicker .ui-datepicker-next-hover {right: 9px;}
 .et-fb-option--date-picker .ui-datepicker .ui-datepicker-next span, .et-fb-option--date-picker .ui-datepicker .ui-datepicker-prev span {display: block;position: absolute;left: 50%;margin-left: -8px;top: 50%;margin-top: -8px;}
-.et-fb-option--date-picker .ui-datepicker .ui-datepicker-title {margin: 0 2.3em;line-height: 1.8em;text-align: center;}
+.et-fb-option--date-picker .ui-datepicker .ui-datepicker-title {margin: 0 2.3em;line-height: 1.8em;text-align: center;font-size: 14px;font-weight: 600;}
 .et-fb-option--date-picker .ui-datepicker .ui-datepicker-title select {font-size: 1em;margin: 1px 0;}
 .et-fb-option--date-picker .ui-datepicker select.ui-datepicker-month, .et-fb-option--date-picker .ui-datepicker select.ui-datepicker-year {width: 45%;}
 .et-fb-option--date-picker .ui-datepicker table {width: 100%;font-size: .9em;border-collapse: collapse;margin: 0 0 .4em;}
-.et-fb-option--date-picker .ui-datepicker th {padding: .7em .3em;text-align: center;font-weight: 700;border: 0;}
+.et-fb-option--date-picker .ui-datepicker th {padding: .7em .3em;text-align: center;border: 0;font-size: 14px;font-weight: 600;}
 .et-fb-option--date-picker .ui-datepicker td {border: 0;padding: 1px;}
-.et-fb-option--date-picker .ui-datepicker td a, .et-fb-option--date-picker .ui-datepicker td span {display: block;padding: .2em;text-align: right;text-decoration: none;}
+.et-fb-option--date-picker .ui-datepicker td a, .et-fb-option--date-picker .ui-datepicker td span {display: block;padding: .2em;text-align: center;text-decoration: none;font-size: 14px;font-weight: 600;}
 .et-fb-option--date-picker .ui-datepicker .ui-datepicker-buttonpane {background-image: none;margin: .7em 0 0;padding: 0 .2em;border-left: 0;border-right: 0;border-bottom: 0;}
 .et-fb-option--date-picker .ui-datepicker .ui-datepicker-buttonpane button {float: right;margin: .5em .2em .4em;cursor: pointer;padding: .2em .6em .3em;width: auto;overflow: visible;}
 .et-fb-option--date-picker .ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {float: left;}
@@ -61,25 +61,28 @@
 .et-fb-option--date-picker .ui-slider-vertical .ui-slider-range {left: 0;width: 100%;}
 .et-fb-option--date-picker .ui-slider-vertical .ui-slider-range-min {bottom: 0;}
 .et-fb-option--date-picker .ui-slider-vertical .ui-slider-range-max {top: 0;}
-.et-fb-option--date-picker .ui-widget {font-family: Arial,Helvetica,sans-serif;font-size: 1em;}
-.et-fb-option--date-picker .ui-widget .ui-widget {font-size: 1em;}
-.et-fb-option--date-picker .ui-widget button, .et-fb-option--date-picker .ui-widget input, .et-fb-option--date-picker .ui-widget select, .et-fb-option--date-picker .ui-widget textarea {font-family: Arial,Helvetica,sans-serif;font-size: 1em;}
-.et-fb-option--date-picker .ui-widget.ui-widget-content {border: 1px solid #c5c5c5;}
-.et-fb-option--date-picker .ui-widget-content {border: 1px solid #ddd;background: #fff;color: #333;}
-.et-fb-option--date-picker .ui-widget-content a {color: #333;}
-.et-fb-option--date-picker .ui-widget-header {border: 1px solid #ddd;background: #e9e9e9;color: #333;font-weight: 700;}
+.et-fb-option--date-picker .ui-widget, .et-fb-option--date-picker .ui-widget .ui-widget, .et-fb-option--date-picker .ui-widget button, .et-fb-option--date-picker .ui-widget input, .et-fb-option--date-picker .ui-widget select, .et-fb-option--date-picker .ui-widget textarea {font-size: 1em;}
+.et-fb-option--date-picker .ui-widget.ui-widget-content {border: 2px solid #f3f5f9;}
+.et-fb-option--date-picker .ui-widget-content, .et-fb-option--date-picker .ui-widget-content a {color: #333;}
+.et-fb-option--date-picker .ui-widget-header {color: #333;font-weight: 700;}
 .et-fb-option--date-picker .ui-widget-header a {color: #333;}
-.et-fb-option--date-picker .ui-button, .et-fb-option--date-picker .ui-state-default, .et-fb-option--date-picker .ui-widget-content .ui-state-default, .et-fb-option--date-picker .ui-widget-header .ui-state-default, html .et-fb-option--date-picker .ui-button.ui-state-disabled:active, html .et-fb-option--date-picker .ui-button.ui-state-disabled:hover {border: 1px solid #c5c5c5;background: #f6f6f6;font-weight: 400;color: #454545;}
-.et-fb-option--date-picker .ui-button, .et-fb-option--date-picker .ui-state-default a, .et-fb-option--date-picker .ui-state-default a:link, .et-fb-option--date-picker .ui-state-default a:visited, a.et-fb-option--date-picker .ui-button, a:link.et-fb-option--date-picker .ui-button, a:visited.et-fb-option--date-picker .ui-button {color: #454545;text-decoration: none;}
-.et-fb-option--date-picker .ui-button:focus, .et-fb-option--date-picker .ui-button:hover, .et-fb-option--date-picker .ui-state-focus, .et-fb-option--date-picker .ui-state-hover, .et-fb-option--date-picker .ui-widget-content .ui-state-focus, .et-fb-option--date-picker .ui-widget-content .ui-state-hover, .et-fb-option--date-picker .ui-widget-header .ui-state-focus, .et-fb-option--date-picker .ui-widget-header .ui-state-hover {border: 1px solid #ccc;background: #ededed;font-weight: 400;color: #2b2b2b;}
-.et-fb-option--date-picker .ui-state-focus a, .et-fb-option--date-picker .ui-state-focus a:hover, .et-fb-option--date-picker .ui-state-focus a:link, .et-fb-option--date-picker .ui-state-focus a:visited, .et-fb-option--date-picker .ui-state-hover a, .et-fb-option--date-picker .ui-state-hover a:hover, .et-fb-option--date-picker .ui-state-hover a:link, .et-fb-option--date-picker .ui-state-hover a:visited, a.et-fb-option--date-picker .ui-button:focus, a.et-fb-option--date-picker .ui-button:hover {color: #2b2b2b;text-decoration: none;}
+.et-fb-option--date-picker .ui-datepicker-calendar {border: 0 !important;}
+.et-fb-option--date-picker thead th, .et-fb-option--date-picker tr th {color: #a6b1c2 !important;}
+.et-fb-option--date-picker .ui-datepicker td, .et-fb-option--date-picker .ui-datepicker th {padding: 5px;}
+.et-fb-option--date-picker .ui-button, .et-fb-option--date-picker .ui-state-default, .et-fb-option--date-picker .ui-widget-content .ui-state-default, .et-fb-option--date-picker .ui-widget-header .ui-state-default, html .et-fb-option--date-picker .ui-button.ui-state-disabled:active, html .et-fb-option--date-picker .ui-button.ui-state-disabled:hover {color: #30343a;}
+.et-fb-option--date-picker .ui-button, .et-fb-option--date-picker .ui-state-default a, .et-fb-option--date-picker .ui-state-default a:link, .et-fb-option--date-picker .ui-state-default a:visited, a.et-fb-option--date-picker .ui-button, a:link.et-fb-option--date-picker .ui-button, a:visited.et-fb-option--date-picker .ui-button {color: #30343a;text-decoration: none;}
+.et-fb-option--date-picker .ui-button:focus, .et-fb-option--date-picker .ui-button:hover, .et-fb-option--date-picker .ui-state-focus, .et-fb-option--date-picker .ui-state-hover, .et-fb-option--date-picker .ui-widget-content .ui-state-focus, .et-fb-option--date-picker .ui-widget-content .ui-state-hover, .et-fb-option--date-picker .ui-widget-header .ui-state-focus, .et-fb-option--date-picker .ui-widget-header .ui-state-hover {color: #30343a;background-color: #e9eff6;border-radius: 3px;}
+.et-fb-option--date-picker .ui-state-focus a, .et-fb-option--date-picker .ui-state-focus a:hover, .et-fb-option--date-picker .ui-state-focus a:link, .et-fb-option--date-picker .ui-state-focus a:visited, .et-fb-option--date-picker .ui-state-hover a, .et-fb-option--date-picker .ui-state-hover a:hover, .et-fb-option--date-picker .ui-state-hover a:link, .et-fb-option--date-picker .ui-state-hover a:visited, a.et-fb-option--date-picker .ui-button:focus, a.et-fb-option--date-picker .ui-button:hover {color: #30343a;text-decoration: none;}
 .et-fb-option--date-picker .ui-visual-focus {box-shadow: 0 0 3px 1px #5e9ed6;}
-.et-fb-option--date-picker .ui-button.ui-state-active:hover, .et-fb-option--date-picker .ui-button:active, .et-fb-option--date-picker .ui-state-active, .et-fb-option--date-picker .ui-widget-content .ui-state-active, .et-fb-option--date-picker .ui-widget-header .ui-state-active, a.et-fb-option--date-picker .ui-button:active {border: 1px solid #003eff;background: #007fff;font-weight: 400;color: #fff;}
-.et-fb-option--date-picker .ui-icon-background, .et-fb-option--date-picker .ui-state-active .ui-icon-background {border: #003eff;background-color: #fff;}
+.et-fb-option--date-picker .ui-button.ui-state-active:hover, .et-fb-option--date-picker .ui-button:active, .et-fb-option--date-picker .ui-state-active, .et-fb-option--date-picker .ui-widget-content .ui-state-active, .et-fb-option--date-picker .ui-widget-header .ui-state-active, a.et-fb-option--date-picker .ui-button:active {background: #3c87e1;color: #fff;border-radius: 3px;}
+.et-fb-option--date-picker .ui-icon-background, .et-fb-option--date-picker .ui-state-active .ui-icon-background {background-color: #fff;}
 .et-fb-option--date-picker .ui-state-active a, .et-fb-option--date-picker .ui-state-active a:link, .et-fb-option--date-picker .ui-state-active a:visited {color: #fff;text-decoration: none;}
-.et-fb-option--date-picker .ui-state-highlight, .et-fb-option--date-picker .ui-widget-content .ui-state-highlight, .et-fb-option--date-picker .ui-widget-header .ui-state-highlight {border: 1px solid #dad55e;background: #fffa90;color: #777620;}
-.et-fb-option--date-picker .ui-state-checked {border: 1px solid #dad55e;background: #fffa90;}
-.et-fb-option--date-picker .ui-state-highlight a, .et-fb-option--date-picker .ui-widget-content .ui-state-highlight a, .et-fb-option--date-picker .ui-widget-header .ui-state-highlight a {color: #777620;}
+.et-fb-option--date-picker .ui-state-highlight, .et-fb-option--date-picker .ui-widget-content .ui-state-highlight, .et-fb-option--date-picker .ui-widget-header .ui-state-highlight {border-radius: 3px;background: transparent;color: #3c87e1;position: relative;}
+.et-fb-option--date-picker .ui-state-highlight:after, .et-fb-option--date-picker .ui-widget-content .ui-state-highlight:after, .et-fb-option--date-picker .ui-widget-header .ui-state-highlight:after {content: "";border-radius: 50%;width: 4px;height: 4px;position: absolute;left: calc(50% - 2px);bottom: 2px;background-color: #3c87e1;}
+.et-fb-option--date-picker .ui-state-highlight.ui-state-active {background: #3c87e1;color: #fff;}
+.et-fb-option--date-picker .ui-state-highlight.ui-state-active:after {background-color: #fff;}
+.et-fb-option--date-picker .ui-state-checked {background: #e9eff6;}
+.et-fb-option--date-picker .ui-state-highlight a, .et-fb-option--date-picker .ui-widget-content .ui-state-highlight a, .et-fb-option--date-picker .ui-widget-header .ui-state-highlight a {color: #fff;}
 .et-fb-option--date-picker .ui-state-error, .et-fb-option--date-picker .ui-widget-content .ui-state-error, .et-fb-option--date-picker .ui-widget-header .ui-state-error {border: 1px solid #f1a899;background: #fddfdf;color: #5f3f3f;}
 .et-fb-option--date-picker .ui-state-error-text, .et-fb-option--date-picker .ui-state-error a, .et-fb-option--date-picker .ui-widget-content .ui-state-error-text, .et-fb-option--date-picker .ui-widget-content .ui-state-error a, .et-fb-option--date-picker .ui-widget-header .ui-state-error-text, .et-fb-option--date-picker .ui-widget-header .ui-state-error a {color: #5f3f3f;}
 .et-fb-option--date-picker .ui-priority-primary, .et-fb-option--date-picker .ui-widget-content .ui-priority-primary, .et-fb-option--date-picker .ui-widget-header .ui-priority-primary {font-weight: 700;}
