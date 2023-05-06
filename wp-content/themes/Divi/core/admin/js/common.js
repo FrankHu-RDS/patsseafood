@@ -1,5 +1,5 @@
 (function($){
-	$(function(){
+	$(document).ready( function(){
 		var user_agent = navigator.userAgent;
 		var is_opera_edge;
 		var browser = user_agent.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))/i) || [];
