@@ -1,7 +1,7 @@
 /* <![CDATA[ */
 var clearpath = ePanelishSettings.clearpath;
 
-jQuery(function($) {
+jQuery( document ).ready( function( $ ) {
 	var editors = [];
 
 	function addEditorInstance( codeEditor, $element, config ) {
@@ -62,7 +62,7 @@ jQuery(function($) {
 		}
 	} );
 
-	$('.et-box-description').on('click', function(){
+	$( ".et-box-description" ).click( function() {
 		var descheading = $( this ).parent( '.et-epanel-box' ).find( ".et-box-title h3" ).html();
 		var desctext    = $( this ).parent( '.et-epanel-box' ).find( ".et-box-title .et-box-descr" ).html();
 
@@ -70,26 +70,26 @@ jQuery(function($) {
 
 		et_pb_center_modal( $( '.et-box-desc' ) );
 
-		$('.et-lightbox-close').on('click', function(){
+		$( '.et-lightbox-close' ).click( function() {
 			et_pb_close_modal( $( '#custom-lbox' ) );
-		});
-	});
+		} );
+	} );
 
-	$('.et-defaults-button.epanel-reset').on('click', function(e){
+	$( ".et-defaults-button.epanel-reset" ).click( function( e ) {
 		e.preventDefault();
 		$( ".reset-popup-overlay, .defaults-hover" ).addClass( 'active' );
 
 		et_pb_center_modal( $( '.defaults-hover' ) );
-	});
+	} );
 
-	$('.no').on('click', function(){
+	$( '.no' ).click( function() {
 		et_pb_close_modal( $( '.reset-popup-overlay' ), 'no_remove' );
 
 		//clean the modal classes when animation complete
 		setTimeout( function() {
 			$( '.reset-popup-overlay, .defaults-hover' ).removeClass( 'active et_pb_modal_closing' );
 		}, 600 );
-	});
+	} );
 
 	// ":not([safari])" is desirable but not necessary selector
 	// ":not([safari])" is desirable but not necessary selector
@@ -139,16 +139,16 @@ jQuery(function($) {
 
 	var $save_message = $( "#epanel-ajax-saving" );
 
-	$('#epanel-save-top').on('click', function(e) {
+	$( '#epanel-save-top' ).click( function( e ) {
 		e.preventDefault();
 
 		$( '#epanel-save' ).trigger( 'click' );
-	});
+	} );
 
-	$('#epanel-save').on('click', function() {
+	$( '#epanel-save' ).click( function() {
 		epanel_save( false, true );
 		return false;
-	});
+	} );
 
 	function epanel_save( callback, message ) {
 
@@ -185,7 +185,7 @@ jQuery(function($) {
 					}, 500 );
 				}
 
-				if ( 'function' === typeof callback ) {
+				if ( $.isFunction( callback ) ) {
 					callback();
 				}
 			}
@@ -265,7 +265,7 @@ jQuery(function($) {
 
 	function et_pb_center_modal( $modal ) {
 		var modal_height            = $modal.outerHeight();
-		var modal_height_adjustment = (0 - (modal_height / 2)) + 'px';
+		var modal_height_adjustment = 0 - ( modal_height / 2 );
 
 		$modal.css( {
 			top:       '50%',
