@@ -5,12 +5,6 @@
  *
  * Copyright (c) 2014 Jörn Zaefferer
  * Released under the MIT license
- *
- * Modified to adapt the latest jQuery version (v3 above) included on WordPress 5.6:
- * - (2020-12-15) - jQuery isFunction method is deprecated.
- * - (2020-12-15) - jQuery submit method is deprecated.
- * - (2021-01-30) - jQuery trim method is deprecated.
- * - (2021-02-05) - jQuery focus event shorthand is deprecated.
  */
 (function($) {
 
@@ -56,7 +50,7 @@ $.extend($.fn, {
 			});
 
 			// validate the form on submit
-			this.on("submit", function( event ) {
+			this.submit( function( event ) {
 				if ( validator.settings.debug ) {
 					// prevent form submit to be able to see console output
 					event.preventDefault();
@@ -188,11 +182,11 @@ $.extend($.fn, {
 });
 
 // Custom selectors
-$.extend($.expr.pseudos, {
+$.extend($.expr[":"], {
 	// http://jqueryvalidation.org/blank-selector/
-	blank: function( a ) { return !("" + $(a).val()).trim(); },
+	blank: function( a ) { return !$.trim("" + $(a).val()); },
 	// http://jqueryvalidation.org/filled-selector/
-	filled: function( a ) { return !!("" + $(a).val()).trim(); },
+	filled: function( a ) { return !!$.trim("" + $(a).val()); },
 	// http://jqueryvalidation.org/unchecked-selector/
 	unchecked: function( a ) { return !$(a).prop("checked"); }
 });
@@ -363,7 +357,7 @@ $.extend($.validator, {
 				.validateDelegate("[type='radio'], [type='checkbox'], select, option", "click", delegate);
 
 			if ( this.settings.invalidHandler ) {
-				$(this.currentForm).on("invalid-form.validate", this.settings.invalidHandler);
+				$(this.currentForm).bind("invalid-form.validate", this.settings.invalidHandler);
 			}
 
 			// Add aria-required to any Static/Data/Class required fields before first validation
@@ -493,7 +487,7 @@ $.extend($.validator, {
 				try {
 					$(this.findLastActive() || this.errorList.length && this.errorList[0].element || [])
 					.filter(":visible")
-					.trigger('focus')
+					.focus()
 					// manually trigger focusin event; without it, focusin handler isn't called, findLastActive won't have anything to find
 					.trigger("focusin");
 				} catch(e) {
@@ -836,7 +830,7 @@ $.extend($.validator, {
 			}
 			delete this.pending[element.name];
 			if ( valid && this.pendingRequest === 0 && this.formSubmitted && this.form() ) {
-				$(this.currentForm).trigger("submit");
+				$(this.currentForm).submit();
 				this.formSubmitted = false;
 			} else if (!valid && this.pendingRequest === 0 && this.formSubmitted) {
 				$(this.currentForm).triggerHandler("invalid-form", [ this ]);
@@ -982,7 +976,7 @@ $.extend($.validator, {
 
 		// evaluate parameters
 		$.each(rules, function( rule, parameter ) {
-			rules[rule] = 'function' === typeof parameter ? parameter(element) : parameter;
+			rules[rule] = $.isFunction(parameter) ? parameter(element) : parameter;
 		});
 
 		// clean number parameters
@@ -994,7 +988,7 @@ $.extend($.validator, {
 		$.each([ "rangelength", "range" ], function() {
 			var parts;
 			if ( rules[this] ) {
-				if ( Array.isArray(rules[this]) ) {
+				if ( $.isArray(rules[this]) ) {
 					rules[this] = [ Number(rules[this][0]), Number(rules[this][1]) ];
 				} else if ( typeof rules[this] === "string" ) {
 					parts = rules[this].split(/[\s,]+/);
@@ -1057,7 +1051,7 @@ $.extend($.validator, {
 			if ( this.checkable(element) ) {
 				return this.getLength(value, element) > 0;
 			}
-			return value.trim().length > 0;
+			return $.trim(value).length > 0;
 		},
 
 		// http://jqueryvalidation.org/email-method/
@@ -1135,19 +1129,19 @@ $.extend($.validator, {
 
 		// http://jqueryvalidation.org/minlength-method/
 		minlength: function( value, element, param ) {
-			var length = Array.isArray( value ) ? value.length : this.getLength(value.trim(), element);
+			var length = $.isArray( value ) ? value.length : this.getLength($.trim(value), element);
 			return this.optional(element) || length >= param;
 		},
 
 		// http://jqueryvalidation.org/maxlength-method/
 		maxlength: function( value, element, param ) {
-			var length = Array.isArray( value ) ? value.length : this.getLength(value.trim(), element);
+			var length = $.isArray( value ) ? value.length : this.getLength($.trim(value), element);
 			return this.optional(element) || length <= param;
 		},
 
 		// http://jqueryvalidation.org/rangelength-method/
 		rangelength: function( value, element, param ) {
-			var length = Array.isArray( value ) ? value.length : this.getLength(value.trim(), element);
+			var length = $.isArray( value ) ? value.length : this.getLength($.trim(value), element);
 			return this.optional(element) || ( length >= param[0] && length <= param[1] );
 		},
 
@@ -1172,7 +1166,7 @@ $.extend($.validator, {
 			// TODO find a way to bind the event just once, avoiding the unbind-rebind overhead
 			var target = $(param);
 			if ( this.settings.onfocusout ) {
-				target.off(".validate-equalTo").on("blur.validate-equalTo", function() {
+				target.unbind(".validate-equalTo").bind("blur.validate-equalTo", function() {
 					$(element).valid();
 				});
 			}
@@ -1227,7 +1221,7 @@ $.extend($.validator, {
 					} else {
 						errors = {};
 						message = response || validator.defaultMessage( element, "remote" );
-						errors[element.name] = previous.message = 'function' === typeof message ? message(value) : message;
+						errors[element.name] = previous.message = $.isFunction(message) ? message(value) : message;
 						validator.invalid[element.name] = true;
 						validator.showErrors(errors);
 					}
@@ -1288,7 +1282,7 @@ $.format = function deprecated() {
 (function($) {
 	$.extend($.fn, {
 		validateDelegate: function( delegate, type, handler ) {
-			return this.on(type, function( event ) {
+			return this.bind(type, function( event ) {
 				var target = $(event.target);
 				if ( target.is(delegate) ) {
 					return handler.apply(target, arguments);
