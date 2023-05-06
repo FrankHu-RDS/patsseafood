@@ -1,80 +1,83 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//frankhu-rds.github.io/patsseafood/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//patsseafood.com/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://frankhu-rds.github.io/patsseafood/</loc>
-		<lastmod>2022-07-04T03:16:49+00:00</lastmod>
+		<loc>https://patsseafood.com/</loc>
+		<lastmod>2023-05-06T01:40:58+00:00</lastmod>
 		<image:image>
-			<image:loc>https://frankhu-rds.github.io/patsseafood/wp-content/uploads/2021/01/pats_seafood_logo.jpg</image:loc>
+			<image:loc>https://patsseafood.com/wp-content/uploads/2021/01/pats_seafood_logo.jpg</image:loc>
+			<image:title><![CDATA[pats_seafood_logo]]></image:title>
+			<image:caption><![CDATA[logo]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://frankhu-rds.github.io/patsseafood/wp-content/uploads/2022/02/boiled_crawfish_shrimp.jpg</image:loc>
+			<image:loc>https://patsseafood.com/wp-content/uploads/2022/02/boiled_crawfish_shrimp.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://frankhu-rds.github.io/patsseafood/wp-content/uploads/2022/02/fried_catfish.jpg</image:loc>
+			<image:loc>https://patsseafood.com/wp-content/uploads/2023/02/Deli-Case-Sideview.jpeg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://frankhu-rds.github.io/patsseafood/wp-content/uploads/2022/02/fresh_crab_ice.jpg</image:loc>
+			<image:loc>https://patsseafood.com/wp-content/uploads/2022/02/fresh_crab_ice.jpg</image:loc>
 		</image:image>
 		<image:image>
-			<image:loc>https://frankhu-rds.github.io/patsseafood/wp-content/uploads/2022/02/redfish_ice.jpg</image:loc>
-		</image:image>
-	</url>
-	<url>
-		<loc>https://frankhu-rds.github.io/patsseafood/catering-2/</loc>
-		<lastmod>2022-07-03T00:55:05+00:00</lastmod>
-		<image:image>
-			<image:loc>https://frankhu-rds.github.io/patsseafood/wp-content/uploads/2021/01/pats_seafood_logo.jpg</image:loc>
+			<image:loc>https://patsseafood.com/wp-content/uploads/2022/02/redfish_ice.jpg</image:loc>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://frankhu-rds.github.io/patsseafood/coming-soon/</loc>
-		<lastmod>2022-07-03T00:55:06+00:00</lastmod>
+		<loc>https://patsseafood.com/coming-soon/</loc>
+		<lastmod>2021-08-26T21:26:49+00:00</lastmod>
 		<image:image>
-			<image:loc>https://frankhu-rds.github.io/patsseafood/wp-content/uploads/2021/01/pats_seafood_logo.jpg</image:loc>
+			<image:loc>https://patsseafood.com/wp-content/uploads/2021/01/pats_seafood_logo.jpg</image:loc>
+			<image:title><![CDATA[pats_seafood_logo]]></image:title>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://frankhu-rds.github.io/patsseafood/online-ordering-location/</loc>
-		<lastmod>2022-07-03T00:55:28+00:00</lastmod>
-	</url>
-	<url>
-		<loc>https://frankhu-rds.github.io/patsseafood/seafood/</loc>
-		<lastmod>2022-07-03T00:55:36+00:00</lastmod>
+		<loc>https://patsseafood.com/about-us/</loc>
+		<lastmod>2023-01-09T02:35:13+00:00</lastmod>
 		<image:image>
-			<image:loc>https://frankhu-rds.github.io/patsseafood/wp-content/uploads/2021/08/Collins-Blvd-Fish-Case-1.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://frankhu-rds.github.io/patsseafood/wp-content/uploads/2021/08/Fresh-Shrimp.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://frankhu-rds.github.io/patsseafood/wp-content/uploads/2021/08/boiled_seafood.jpg</image:loc>
+			<image:loc>https://patsseafood.com/wp-content/uploads/2021/01/pats_seafood_logo.jpg</image:loc>
+			<image:title><![CDATA[pats_seafood_logo]]></image:title>
+			<image:caption><![CDATA[logo]]></image:caption>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://frankhu-rds.github.io/patsseafood/about-us/</loc>
-		<lastmod>2022-07-04T02:53:44+00:00</lastmod>
+		<loc>https://patsseafood.com/catering-2/</loc>
+		<lastmod>2023-01-31T06:09:51+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://patsseafood.com/seafood/</loc>
+		<lastmod>2023-02-01T23:34:32+00:00</lastmod>
 		<image:image>
-			<image:loc>https://frankhu-rds.github.io/patsseafood/wp-content/uploads/2022/06/pats_seafood_logo.jpg</image:loc>
+			<image:loc>https://patsseafood.com/wp-content/uploads/2021/08/Collins-Blvd-Fish-Case-1.jpg</image:loc>
+			<image:title><![CDATA[Collins Blvd Fish Case 1]]></image:title>
+			<image:caption><![CDATA[fresh_fish]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://patsseafood.com/wp-content/uploads/2021/08/Fresh-Shrimp.jpg</image:loc>
+			<image:title><![CDATA[Fresh Shrimp]]></image:title>
+			<image:caption><![CDATA[fresh_shrimp]]></image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>https://patsseafood.com/wp-content/uploads/2021/08/boiled_seafood.jpg</image:loc>
+			<image:title><![CDATA[Boiled Crabs]]></image:title>
+			<image:caption><![CDATA[boiled_seafood]]></image:caption>
 		</image:image>
 	</url>
 	<url>
-		<loc>https://frankhu-rds.github.io/patsseafood/deli/</loc>
-		<lastmod>2022-07-04T03:01:08+00:00</lastmod>
+		<loc>https://patsseafood.com/deli/</loc>
+		<lastmod>2023-02-15T19:12:40+00:00</lastmod>
 		<image:image>
-			<image:loc>https://frankhu-rds.github.io/patsseafood/wp-content/uploads/2021/08/Deli-Case-1.jpg</image:loc>
+			<image:loc>https://patsseafood.com/wp-content/uploads/2021/08/Deli-Case-1.jpg</image:loc>
+			<image:title><![CDATA[Deli Case]]></image:title>
+			<image:caption><![CDATA[deli]]></image:caption>
 		</image:image>
 		<image:image>
-			<image:loc>https://frankhu-rds.github.io/patsseafood/wp-content/uploads/2021/08/Salads.jpg</image:loc>
+			<image:loc>https://patsseafood.com/wp-content/uploads/2021/08/Salads.jpg</image:loc>
+			<image:title><![CDATA[Salads]]></image:title>
+			<image:caption><![CDATA[salads]]></image:caption>
 		</image:image>
-		<image:image>
-			<image:loc>https://frankhu-rds.github.io/patsseafood/wp-content/uploads/2022/02/crawfish_pies.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://frankhu-rds.github.io/patsseafood/wp-content/uploads/2022/02/po_boy_product.jpg</image:loc>
-		</image:image>
-		<image:image>
-			<image:loc>https://frankhu-rds.github.io/patsseafood/wp-content/uploads/2022/02/jumpstory-download20220223-204416.jpg</image:loc>
-		</image:image>
+	</url>
+	<url>
+		<loc>https://patsseafood.com/online-ordering-location/</loc>
+		<lastmod>2023-03-02T04:48:00+00:00</lastmod>
 	</url>
 </urlset>
 <!-- XML Sitemap generated by Yoast SEO -->
