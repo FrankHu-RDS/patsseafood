@@ -30,34 +30,6 @@
 		_close_button = '<button type="button" class="button button-confirm" />',
 		_close_button_icon = '<div style="fill: #3EF400; width: 25px; height: 25px; margin-top: -1px;"><svg viewBox="0 0 28 28" preserveAspectRatio="xMidYMid meet" shapeRendering="geometricPrecision"><g><path d="M19.203 9.21a.677.677 0 0 0-.98 0l-5.71 5.9-2.85-2.95a.675.675 0 0 0-.98 0l-1.48 1.523a.737.737 0 0 0 0 1.015l4.82 4.979a.677.677 0 0 0 .98 0l7.68-7.927a.737.737 0 0 0 0-1.015l-1.48-1.525z" fillRule="evenodd" /></g></svg></div>';
 
-  // Color picker label translation. By default, set label manually without translation.
-  var _defaultString    = 'Default';
-  var _defaultAriaLabel = 'Select default color';
-  var _clearString      = 'Clear';
-  var _clearAriaLabel   = 'Clear color';
-  var _colorValue       = 'Color value';
-  var _selectColor      = 'Select Color';
-
-  if ('undefined' !== typeof wp && 'undefined' !== typeof wp.i18n && 'undefined' !== typeof wp.i18n.__) {
-    // Directly use wp.i18n if it exists. wp.i18n is added on 5.0.
-    var __ = wp.i18n.__;
-    _defaultString    = __( 'Default' );
-    _defaultAriaLabel = __( 'Select default color' );
-    _clearString      = __( 'Clear' );
-    _clearAriaLabel   = __( 'Clear color' );
-    _colorValue       = __( 'Color value' );
-    _selectColor      = __( 'Select Color' );
-  } else if ('undefined' !== typeof wpColorPickerL10n && 'undefined' !== typeof wpColorPickerL10n.current) {
-    // Or use wpColorPickerL10n if it's still supported. wpColorPickerL10n is deprecated
-    // since 5.5.
-    _defaultString    = wpColorPickerL10n.defaultString;
-    _defaultAriaLabel = wpColorPickerL10n.defaultAriaLabel;
-    _clearString      = wpColorPickerL10n.clear,
-    _clearAriaLabel   = wpColorPickerL10n.clearAriaLabel;
-    _colorValue       = wpColorPickerL10n.defaultLabel;
-    _selectColor      = wpColorPickerL10n.pick;
-  }
-
 	/**
 	 * Overwrite Color
 	 * for enable support rbga
@@ -103,7 +75,7 @@
 			}
 
 			// Bind the close event.
-			self.close = self.close.bind(self);
+			self.close = $.proxy( self.close, self );
 
 			self.initialValue = el.val();
 
@@ -120,7 +92,7 @@
 				// Insert the default label text.
 				self.wrappingLabelText = $( _wrappingLabelText )
 					.insertBefore( el )
-					.text( _colorValue );
+					.text( wpColorPickerL10n.defaultLabel );
 			}
 
 			/*
@@ -137,7 +109,7 @@
 			self.toggler = $( _before )
 				.insertBefore( self.wrappingLabel )
 				.css( { backgroundColor: self.initialValue } )
-				.attr( 'title', _selectColor )
+				.attr( 'title', wpColorPickerL10n.pick )
 				.addClass( 'et-wp-color-result-updated');
 
 			// some strings were changed in recent colorpicker update, but we still need to use legacy strings in some places
@@ -146,7 +118,7 @@
 			}
 
 			// Set the toggle button span element text.
-			self.toggler.find( '.wp-color-result-text' ).text( _selectColor );
+			self.toggler.find( '.wp-color-result-text' ).text( wpColorPickerL10n.pick );
 			// Set up the Iris container and insert it after the wrapping label.
 			self.pickerContainer = $( _after ).insertAfter( self.wrappingLabel );
 			// Store a reference to the Clear/Default button.
@@ -161,13 +133,13 @@
 			if ( self.options.defaultColor ) {
 				self.button
 					.addClass( 'wp-picker-default' )
-					.val( _defaultString )
-					.attr( 'aria-label', _defaultAriaLabel );
+					.val( wpColorPickerL10n.defaultString )
+					.attr( 'aria-label', wpColorPickerL10n.defaultAriaLabel );
 			} else {
 				self.button
 					.addClass( 'wp-picker-clear' )
-					.val( _clearString )
-					.attr( 'aria-label', _clearAriaLabel );
+					.val( wpColorPickerL10n.clear )
+					.attr( 'aria-label', wpColorPickerL10n.clearAriaLabel );
 			}
 
 			// Wrap the wrapping label in its wrapper and append the Clear/Default button.
@@ -214,8 +186,8 @@
 							'width'                     : '100%',
 							'height'                    : '100%',
 							'position'                  : 'absolute',
-							'top'                       : '0px',
-							'left'                      : '0px',
+							'top'                       : 0,
+							'left'                      : 0,
 							'border-top-left-radius'    : '3px',
 							'border-bottom-left-radius' : '3px',
 							'background'                : ui.color.toString()
@@ -225,7 +197,7 @@
 					}
 
 					// check for a custom cb
-					if ( 'function' === typeof self.options.change ) {
+					if ( $.isFunction( self.options.change ) ) {
 						self.options.change.call( this, event, ui );
 					}
 				}
@@ -236,7 +208,7 @@
 
 			// Force the color picker to always be closed on initial load.
 			if ( ! self.options.hide ) {
-				self.toggler.trigger('click');
+				self.toggler.click();
 			}
 		},
 
@@ -249,7 +221,7 @@
 				return false;
 			});
 
-			self.toggler.on('click', function() {
+			self.toggler.click( function(){
 				if ( self.toggler.hasClass( 'wp-picker-open' ) ) {
 					self.close();
 				} else {
@@ -267,7 +239,7 @@
 					}
 
 					// fire clear callback if we have one
-					if ( 'function' === typeof self.options.clear )
+					if ( $.isFunction( self.options.clear ) )
 						self.options.clear.call( this, event );
 				}
 			} );
@@ -281,15 +253,15 @@
 						self.toggler.css( 'backgroundColor', '' );
 					}
 
-					if ( 'function' === typeof self.options.clear )
+					if ( $.isFunction( self.options.clear ) )
 						self.options.clear.call( this, event );
 
 				} else if ( $( this ).hasClass( 'wp-picker-default' ) ) {
-					self.element.val( self.options.defaultColor ).trigger('change');
+					self.element.val( self.options.defaultColor ).change();
 				}
 			});
 
-			self.close_button.on('click', function(event) {
+			self.close_button.click( function( event ) {
 				event.preventDefault();
 				self.close();
 			});
@@ -299,7 +271,7 @@
 			this._super();
 			var self = this;
 
-			if ('function' === typeof self.options.onClose) {
+			if ($.isFunction(self.options.onClose)) {
 				self.options.onClose.call(this);
 			}
 		},
@@ -345,7 +317,7 @@
 				});
 
 				// Change size strip and add margin for sliders
-				self.controls.square.css({'margin-right': '0px'});
+				self.controls.square.css({'margin-right': '0'});
 				var emptyWidth = ( self.picker.width() - self.controls.square.width() - 20 ),
 					stripsMargin = emptyWidth/6,
 					stripsWidth = (emptyWidth/2) - stripsMargin;
@@ -475,7 +447,7 @@
 				totalPadding = 20,
 				innerWidth = opts.border ? opts.width - totalPadding : opts.width,
 				controlsHeight,
-				paletteCount = Array.isArray( opts.palettes ) ? opts.palettes.length : self._palettes.length,
+				paletteCount = $.isArray( opts.palettes ) ? opts.palettes.length : self._palettes.length,
 				paletteMargin, paletteWidth, paletteContainerWidth;
 
 			if ( reset ) {
@@ -496,10 +468,7 @@
 			}
 
 			strip.height( squareWidth ).width( stripWidth );
-			self.picker.css({
-				width: 'number' === typeof opts.width ? opts.width + 'px' : opts.width,
-				height: 'number' === typeof controlsHeight ? controlsHeight + 'px' : controlsHeight,
-			});
+			self.picker.css( { width: opts.width, height: controlsHeight } );
 
 			if ( ! opts.palettes ) {
 				return self.picker.css( 'paddingBottom', '' );
@@ -512,18 +481,18 @@
 			self.picker.find('.iris-palette').each( function( i ) {
 				var margin = i === 0 ? 0 : paletteMargin;
 				$( this ).css({
-					width: paletteWidth + 'px',
-					height: paletteWidth + 'px',
-					marginLeft: margin + 'px',
+					width: paletteWidth,
+					height: paletteWidth,
+					marginLeft: margin
 				});
 			});
-			self.picker.css( 'paddingBottom', paletteWidth + paletteMargin + 'px' );
+			self.picker.css( 'paddingBottom', paletteWidth + paletteMargin );
 			strip.height( paletteWidth + paletteMargin + squareWidth );
 		}
 	} );
 }( jQuery ) );
 
-// Auto Call plugin is class is color-picker.
-jQuery(function($) {
-  $('.color-picker').wpColorPicker();
-});
+// Auto Call plugin is class is color-picker
+jQuery( document ).ready( function( $ ) {
+  $( '.color-picker' ).wpColorPicker();
+} );
